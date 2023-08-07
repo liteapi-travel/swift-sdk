@@ -1,10 +1,10 @@
-name: OpenAPIClient
+name: LiteAPIClient
 targets:
-  OpenAPIClient:
+  LiteAPIClient:
     type: framework
     platform: iOS
     deploymentTarget: "9.0"
-    sources: [OpenAPIClient]
+    sources: [LiteAPIClient]
     info:
       path: ./Info.plist
       version: 2.0.0

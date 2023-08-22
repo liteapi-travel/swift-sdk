@@ -55,7 +55,7 @@ open class BookingManagementAPI {
         let bookingIdPreEscape = "\(APIHelper.mapValueToPathItem(bookingId))"
         let bookingIdPostEscape = bookingIdPreEscape.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
         localVariablePath = localVariablePath.replacingOccurrences(of: "{bookingId}", with: bookingIdPostEscape, options: .literal, range: nil)
-        let localVariableURLString = LiteAPIClientAPI.basePath + localVariablePath
+        let localVariableURLString = LiteAPIClientAPI.bookPath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -117,7 +117,7 @@ open class BookingManagementAPI {
         let bookingIdPreEscape = "\(APIHelper.mapValueToPathItem(bookingId))"
         let bookingIdPostEscape = bookingIdPreEscape.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""
         localVariablePath = localVariablePath.replacingOccurrences(of: "{bookingId}", with: bookingIdPostEscape, options: .literal, range: nil)
-        let localVariableURLString = LiteAPIClientAPI.basePath + localVariablePath
+        let localVariableURLString = LiteAPIClientAPI.bookPath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -175,7 +175,7 @@ open class BookingManagementAPI {
      */
     open class func bookingsGetWithRequestBuilder(guestId: String) -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/bookings"
-        let localVariableURLString = LiteAPIClientAPI.basePath + localVariablePath
+        let localVariableURLString = LiteAPIClientAPI.bookPath + localVariablePath
         let localVariableParameters: [String: Any]? = nil
 
         var localVariableUrlComponents = URLComponents(string: localVariableURLString)

@@ -9,6 +9,7 @@ public typealias LiteAPIClient = LiteAPIClientAPI
 
 open class LiteAPIClientAPI {
     public static var basePath = "https://api.liteapi.travel/v2.0"
+    public static var bookPath = "https://book.liteapi.travel/v2.0";
     public static var customHeaders: [String: String] = [:]
     public static var credential: URLCredential?
     public static var requestBuilderFactory: RequestBuilderFactory = URLSessionRequestBuilderFactory()

@@ -85,7 +85,7 @@ open class BookAPI {
      */
     open class func ratesBookPostWithRequestBuilder(ratesBookPostRequest: RatesBookPostRequest? = nil) -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/rates/book"
-        let localVariableURLString = LiteAPIClientAPI.basePath + localVariablePath
+        let localVariableURLString = LiteAPIClientAPI.bookPath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: ratesBookPostRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -149,7 +149,7 @@ open class BookAPI {
      */
     open class func ratesPrebookPostWithRequestBuilder(body: AnyCodable? = nil) -> RequestBuilder<AnyCodable> {
         let localVariablePath = "/rates/prebook"
-        let localVariableURLString = LiteAPIClientAPI.basePath + localVariablePath
+        let localVariableURLString = LiteAPIClientAPI.bookPath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: body)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
